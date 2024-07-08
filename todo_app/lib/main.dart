@@ -28,7 +28,9 @@ class _TodoListAppState extends State<TodoListApp> {
 
 @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+    home: Scaffold(
+      backgroundColor: Colors.blueGrey,
       appBar: AppBar(
         title: const Text('Todo List'),
       ),
@@ -56,6 +58,7 @@ class _TodoListAppState extends State<TodoListApp> {
           ),
         ],
       ),
+    ),
     );
   }
 }
